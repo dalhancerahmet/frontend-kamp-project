@@ -21,7 +21,6 @@ export class AuthService {
   isAuthenticated(){
     if(localStorage.getItem("token")){
       return true;
-
     }
     else
     {
