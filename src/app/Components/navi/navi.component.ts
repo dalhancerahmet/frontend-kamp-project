@@ -11,5 +11,8 @@ export class NaviComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  exit(){
+    localStorage.clear();
+  }
 
 }
