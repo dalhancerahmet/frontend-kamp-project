@@ -18,6 +18,9 @@ import { CartSummaryComponent } from './Components/cart-summary/cart-summary.com
 import { ProductAddComponent } from './Components/product-add/product-add.component';
 import { LoginComponent } from './Components/login/login.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { SepetimComponent } from './Components/sepetim/sepetim.component';
+import { OdemeyapComponent } from './Components/odemeyap/odemeyap.component';
+import { RegisterComponent } from './Components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
     FilterPipePipe,
     CartSummaryComponent,
     ProductAddComponent,
-    LoginComponent
+    LoginComponent,
+    SepetimComponent,
+    OdemeyapComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

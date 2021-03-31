@@ -14,10 +14,12 @@ export class CartService {
     let item = CartItems.find(c=>c.product.productId===product.productId);
     if(item){
       item.quantity+=1;
+      item.price=item.price*item.quantity;
     }else{
       let cartItem = new CartItem();
       cartItem.product = product;
-      cartItem.quantity =1;
+      cartItem.quantity=1;
+      cartItem.price=10
       CartItems.push(cartItem)
     }
   }

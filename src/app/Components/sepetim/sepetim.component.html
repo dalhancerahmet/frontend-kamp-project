@@ -1,0 +1,13 @@
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-12">
+        <div class="card-body" *ngFor="let cartItem of cartItems">
+          <h5 class="card-title">{{cartItem.product.productName}}</h5>
+          <p class="card-text">{{cartItem.price}} TL</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-grid gap-2">
+    <button routerLink="/odemeyap" class="btn btn-primary" type="button">Ödeme Yap</button>
+  </div>
